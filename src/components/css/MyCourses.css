@@ -147,8 +147,32 @@
 .item-feat-des {
     color: #000;
     font-family: Cairo;
-    font-size: 12.944px;
+    font-size: 15.944px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
+.hn-Coursename{
+    color: var(--gray-3, #828282);
+font-family: Cairo;
+font-size: 11.326px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.mini-calendar {
+    height: 100px;
+    font-size: 12px;
+  }
+  
+  .mini-calendar .react-calendar__navigation,
+  .mini-calendar .react-calendar__month-view__days {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mini-calendar .react-calendar__tile--now {
+    background-color: #36558F;
+    color: #fff;
+  }

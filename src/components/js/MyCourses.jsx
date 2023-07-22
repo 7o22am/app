@@ -17,18 +17,19 @@ import { isDisabled } from '@testing-library/user-event/dist/utils';
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 const data = [
-    { label: 'SAT', y: 10 },
+    { label: 'SAT', y: 60 },
     { label: 'SUN', y: 20 },
-    { label: 'MON', y: 50 },
+    { label: 'MON', y: 70 },
     { label: 'TUE', y: 40 },
     { label: 'THE', y: 50 },
-    { label: 'FRE', y: 30 },
+    { label: 'FRE', y: 40 },
 ];
 
 const options = {
     backgroundColor: "transparent",
     labelFormatter: null,
-    height: 150,
+     
+    height: 160,
     axisX: {
 
         lineThickness: 0,
@@ -144,8 +145,8 @@ export default function MyCourses() {
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="item4 h-25">
-                                        <Calendar onChange={onChange} value={date} className="my-calendar" />
+                                    <div className="mini-calendar-container overflow-hidden">
+                                        <Calendar onChange={onChange} value={date} className="mini-calendar" />
                                     </div>
                                 </div>
                             </div>
@@ -181,12 +182,12 @@ export default function MyCourses() {
                                                     </th>
                                                     <td> <div>
                                                         {Course.Coursename}
-                                                        <p>7 lessons</p>
+                                                        <p className='hn-Coursename'>7 lessons</p>
                                                     </div> </td>
-                                                    <td className='tb-mm'><BsFillPersonFill size={15} color="#000" />
+                                                    <td className='tb-mm py-3'><BsFillPersonFill size={15} color="#000" />
                                                         {Course.Mentor}
                                                     </td>
-                                                    <td className='tb-mm'><div className="d-flex justify-content-center">
+                                                    <td className='tb-mm py-3'><div className="d-flex justify-content-center">
                                                         {Course.Marks}</div>
                                                     </td>
                                                     <td className='tb-p'>
@@ -206,7 +207,7 @@ export default function MyCourses() {
                                     </table>
                                 </div>
 
-                                <div className="col-md-4">
+                                <div className="col-md-4 py-3">
                                     <p className='item4-title' >FEATURED</p>
                                     <div className=" item-cou p-2 ">
                                         <div classNameName='d-flex'>
@@ -214,12 +215,12 @@ export default function MyCourses() {
                                                 <div style={{ backgroundColor: '#36558F', borderRadius: '50%', padding: '10px' }}>
                                                     <FaGraduationCap size={20} color="#fff" />
                                                 </div>
-                                                <div className='d-flex'> <p className='item-feat-p'> 5 lessons </p>&nbsp;&nbsp; 
-                                                <p className='item-feat-p'>   4 quizes</p></div>
-                                                </div>
+                                                <div className='d-flex'> <p className='item-feat-p'> 5 lessons </p>&nbsp;&nbsp;
+                                                    <p className='item-feat-p'>   4 quizes</p></div>
+                                            </div>
                                         </div>
-                                        <p className='item-feat-na' >Enim erat elit diam donec</p>
-                                        <p className='item-feat-des'>Quisque et tristique eu est sed id sapien, nullam erat.</p>
+                                        <p className='item-feat-na' > Enim erat elit diam donec </p>
+                                        <p className='item-feat-des'> Quisque et tristique eu est sed id sapien, nullam erat. </p>
                                         <div className="d-flex  align-items-end  justify-content-between m-0 p-0">
                                             <div className="d-flex">
                                                 <BsFillPersonFill size={22} color="#000" />&nbsp;&nbsp;
@@ -249,10 +250,10 @@ export default function MyCourses() {
                                                     <FaGraduationCap size={20} color="#fff" />
                                                 </div>
                                                 <div className='d-flex'> <p className='item-feat-p'> 5 lessons </p>&nbsp;&nbsp;
-                                                 <p className='item-feat-p'>   4 quizes</p></div></div>
+                                                    <p className='item-feat-p'>   4 quizes</p></div></div>
                                         </div>
                                         <p className='item-feat-na'>Nibh consectetur leo</p>
-                                        <p  className='item-feat-des'>A, sed lectus id rutrum phasellus adipiscing sit dolor quis.</p>
+                                        <p className='item-feat-des'> A, sed lectus id rutrum phasellus adipiscing sit dolor quis. </p>
                                         <div className="d-flex  align-items-end  justify-content-between  m-0 p-0">
                                             <div className="d-flex">
                                                 <BsFillPersonFill size={22} color="#000" />&nbsp;&nbsp;
