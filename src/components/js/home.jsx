@@ -10,7 +10,7 @@ import ImgMe from '../../assets/Image1.png'
 export default function home() {
   return (
     <>
-      <div className="container py-5">
+      <div className="container-fluid py-5">
         <div className="row">
           <div className="col-md-2">
             <div className="item">

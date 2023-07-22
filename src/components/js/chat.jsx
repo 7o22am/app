@@ -14,7 +14,7 @@ export default function chat() {
     return (
         <>
 
-            <div className="container py-3">
+            <div className="container-fluid py-3">
                 <div className="row">
                     <div className="col-md-2">
                         <div className="item">
