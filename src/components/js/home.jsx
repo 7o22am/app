@@ -5,9 +5,58 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { FaGraduationCap } from 'react-icons/fa';
 import ImgMe from '../../assets/Image1.png'
- 
+import CanvasJSReact from '@canvasjs/react-charts';
+const CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
+const data = [
+  { label: 'SAT', y: 60 },
+  { label: 'SUN', y: 20 },
+  { label: 'MON', y: 70 },
+  { label: 'TUE', y: 40 },
+  { label: 'THE', y: 50 },
+  { label: 'FRE', y: 40 },
+];
+
+const options = {
+  backgroundColor: "transparent",
+  labelFormatter: null,
+
+  height: 160,
+  axisX: {
+
+    lineThickness: 0,
+    gridThickness: 0,
+    tickLength: 0,
+  },
+  axisY: {
+
+    lineThickness: 0,
+    gridThickness: 0,
+    tickLength: 0,
+    labelFormatter: function () {
+      return "";
+    },
+
+  },
+
+
+  title: {
+    text: 'STATISTICS',
+
+  },
+  data: [
+    {
+      type: 'column',
+
+
+      dataPoints: data,
+    },
+  ],
+};
 
 export default function home() {
+
+
   return (
     <>
       <div className="container-fluid py-5">
@@ -30,14 +79,15 @@ export default function home() {
                 <HiOutlineBell size={24} color="#333" />
               </div>
             </div>
-            <div className="d-flex justify-content-between py-5 item-card">
-              <div >
+
+            <div className="d-flex justify-content-between   item-card">
+              <div className='py-3'>
                 <h3 className="item-back">Wellcome Back! </h3>
                 <p className="item-back">You Complete your 60% of your goal this weak!</p>
                 <p className="item-back">Start your goal and improve your result</p>
               </div>
-              <div classNameName='item-svg'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="241" height="246" viewBox="0 0 241 246" fill="none">
+              <div className='item-svg'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="141" height="146" viewBox="0 0 241 246" fill="none">
                   <path d="M132.195 79.8419L131.511 92.7575C135.377 96.4795 141.618 98.1703 149.303 98.6282C157.829 97.2838 164.741 94.9766 169.832 91.5834L168.463 72.21L132.195 79.8419Z" fill="#FFA382" />
                   <path d="M132.194 79.8418V83.3642L145.881 79.8418H132.194Z" fill="#FE7649" />
                   <path d="M125.352 27.5921V31.907C125.351 32.5212 124.949 33.0833 124.312 33.3629C123.674 33.6425 122.908 33.5927 122.327 33.2338C118.837 31.1145 115.087 25.1675 113.547 18.8212C111.611 10.6022 119.706 3.09352 129.355 4.27354C132.36 4.65727 135.263 5.49402 137.929 6.74512C138.385 6.95736 138.921 7.00158 139.416 6.86761C139.91 6.73364 140.319 6.433 140.55 6.03476C145.778 -3.11183 153.696 -0.164728 162.776 7.98971C163.319 8.47114 164.15 8.61795 164.87 8.35957C176.114 4.33812 180.096 7.32632 179.036 15.2635C178.976 15.7037 179.129 16.1456 179.459 16.4869C179.788 16.8282 180.266 17.0394 180.781 17.0717C191.983 17.7762 189.287 25.6371 182.382 35.6643C181.889 36.3674 180.868 36.6526 179.987 36.3336C176.175 35.0361 173.431 37.1731 171.029 40.3844C170.702 40.8189 170.631 41.3601 170.838 41.8462C176.777 55.8126 172.603 73.6714 170.153 76.0256C167.416 78.6439 154.661 84.8845 130.771 80.1938C130.567 80.1601 130.373 80.0945 130.197 80C125.133 77.3934 123.559 70.2253 123.962 60.4681" fill="#001047" />
@@ -88,26 +138,32 @@ export default function home() {
             </div>
 
 
-            <div className="container py-5">
+            <div className="container ">
               <div className="row">
                 <div className="col-md-9">
 
-                  <div className="container py-5">
+                  <div className="container py-3">
                     <div className="row">
                       <div className="col-md-3 item-cou   ">
-                        <div classNameName='d-flex align-items-center'>
-                          <FaGraduationCap size={20} color="#333" />
-                          <p classNameName='item-cou-pro ml-3 mb-0 mx-1 '> Courses in progress</p>
+
+                        <div className='d-flex p-2'>
+                          <div className='d-flex align-items-center' style={{ backgroundColor: '#36558F', width: '15px', height: '15px', padding: '1px' }}>
+                            <FaGraduationCap size={25} color="#fff" />
+                          </div>&nbsp;&nbsp;
+                          <p className='item-cou-pro ml-3 mb-0 mx-1 '> Courses in progress</p>
                         </div>
-                        <p classNameName='item-cou-num   '>3</p>
+
+                        <p className='item-cou-num px-2'>3</p>
                       </div>
 
                       <div className="col-md-3 item-cou offset-md-1">
-                      <div classNameName='d-flex align-items-center'>
-                          <FaGraduationCap size={20} color="#333" />
-                      <p classNameName='item-cou-pro ml-3 mb-0 mx-1'> Time spent</p>
-                      </div>
-                        <p classNameName='item-cou-num   '>3h 15m</p>
+                        <div className='d-flex align-items-center'>
+                          <div className='d-flex align-items-center' style={{ backgroundColor: '#36558F', width: '15px', height: '15px', padding: '1px' }}>
+                            <FaGraduationCap size={25} color="#fff" />
+                          </div>&nbsp;&nbsp;
+                          <p className='item-cou-pro ml-3 mb-0 mx-1'> Time spent</p>
+                        </div>
+                        <p className='item-cou-num  p-2 '>3h 15m</p>
                       </div>
 
                     </div>
@@ -116,17 +172,19 @@ export default function home() {
                   <div className="container">
                     <div className="row">
                       <div className="col-md-6 item-cou   ">
-                        <div classNameName='d-flex  '>
-
-                          <p classNameName='item-cou-pro py-3'>Courses in progress</p>
+                        <div  >
+                          <CanvasJSChart options={options} />
                         </div>
-
-                        <p classNameName='item-cou-num   '>3</p>
                       </div>
 
-                      <div className="col-md-3 item-cou  ">
-                        <p classNameName='item-cou-pro py-3'>Time spent</p>
-                        <p classNameName='item-cou-num   '>3h 15m</p>
+                      <div className="col-md-3 item-cou offset-md-1  d-flex flex-column  justify-content-center ">
+
+                        <p className='item-cou-pro py-3'>PROGRESS</p>  
+                        <svg className='mx-auto' xmlns="http://www.w3.org/2000/svg" width="77" height="92" viewBox="0 0 77 92" fill="none">
+                          <text x="22" y="46" fill="black">45%</text>
+                          <path d="M31.8442 2.39553C31.8442 1.32628 32.7114 0.455082 33.7797 0.501534C40.5228 0.794759 47.1237 2.61713 53.0907 5.84406C59.6275 9.37917 65.2017 14.4908 69.3196 20.7262C73.4375 26.9616 75.972 34.1282 76.6985 41.5914C77.425 49.0545 76.3211 56.5837 73.4847 63.5121C70.6482 70.4405 66.1667 76.5542 60.4371 81.3116C54.7076 86.0691 47.9068 89.3235 40.6371 90.7865C33.3675 92.2495 25.8535 91.8761 18.7606 89.6992C12.2719 87.7077 6.31891 84.2631 1.3392 79.6309C0.567314 78.9129 0.570068 77.7031 1.31113 76.9533C2.06456 76.1911 3.2926 76.1947 4.08099 76.9207C8.60689 81.0889 13.9995 84.1915 19.8716 85.9938C26.3622 87.9858 33.2382 88.3276 39.8905 86.9888C46.5428 85.65 52.7662 82.672 58.0092 78.3185C63.2523 73.965 67.3533 68.3704 69.9489 62.0303C72.5445 55.6902 73.5546 48.8003 72.8898 41.9709C72.225 35.1415 69.9058 28.5834 66.1375 22.8774C62.3693 17.1715 57.2683 12.4939 51.2866 9.25896C45.8747 6.33224 39.893 4.6681 33.7795 4.37756C32.7115 4.3268 31.8442 3.46479 31.8442 2.39553Z" fill="#D81159" />
+                        </svg>
+                        <p className='item-cou-pro py-3 mx-auto'>courses</p>
                       </div>
 
                     </div>
@@ -135,9 +193,9 @@ export default function home() {
 
 
                 </div>
-                <div className="col-md-3 py-5">
+                <div className="col-md-3">
                   <div className="item-st d-flex flex-column justify-content-center align-items-center">
-                    <h5 className="item-st-lo ">Log out</h5>
+                    <h5 className="item-st-lo py-2 ">Log out</h5>
                     <div className='item-img'>
                       <img src={ImgMe} alt="My Image" />
                     </div>
@@ -148,27 +206,22 @@ export default function home() {
               </div>
             </div>
 
-
-
-
-
-
-            <div classNameName='item-courses item-title2'>
+            <div className='item-title2  '>
               <h4> My courses</h4>
             </div>
             <div className="container">
               <div className="row">
-                <div className="col-md-4   ">
+                <div className="col-md-3   ">
                   <div className="item">
-                    <div classNameName='py-2 '>
+                    <div className='py-2 '>
                       <div className="d-flex justify-content-between align-items-center">
                         <FaGraduationCap size={20} color="#333" />
                         <BsThreeDotsVertical size={20} color="#333" />
                       </div>
-                      <div classNameName='px-5'>
-                        <p classNameName='item-cou-inf '>Introduction to Web Devep...</p>
-                        <p classNameName='item-cou-inf2  '>Shams Tabrez </p>
-                        <svg classNameName='py-2' xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
+                      <div className='px-5'>
+                        <p className='item-cou-inf '>Introduction to Web Devep...</p>
+                        <p className='item-cou-inf2  '>Shams Tabrez </p>
+                        <svg className='py-2' xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
                           <circle cx="36.9286" cy="36.9946" r="36.145" fill="#FBE7EE" />
                           <path d="M36.9286 0.849731C44.0774 0.849731 51.0657 2.9696 57.0097 6.94125C62.9537 10.9129 67.5865 16.558 70.3222 23.1626C73.058 29.7672 73.7738 37.0348 72.3791 44.0462C70.9844 51.0577 67.542 57.4981 62.487 62.553L36.9286 36.9947V0.849731Z" fill="#D81159" />
                         </svg>
@@ -178,17 +231,17 @@ export default function home() {
                   </div>
 
                 </div>
-                <div className="col-md-4 ">
+                <div className="col-md-3 ">
                   <div className="item-two">
-                    <div classNameName='py-2 '>
+                    <div className='py-2'>
                       <div className="d-flex justify-content-between align-items-center">
                         <FaGraduationCap size={20} color="#333" />
                         <BsThreeDotsVertical size={20} color="#333" />
                       </div>
-                      <div classNameName='px-5'>
-                        <p classNameName='item-cou-inf '>Introduction to Web Devep...</p>
-                        <p classNameName='item-cou-inf2  '>Shams Tabrez </p>
-                        <svg classNameName='py-2' xmlns="http://www.w3.org/2000/svg" width="73" height="74" viewBox="0 0 73 74" fill="none">
+                      <div className='px-5'>
+                        <p className='item-cou-inf '>Introduction to Web Devep...</p>
+                        <p className='item-cou-inf2  '>Shams Tabrez </p>
+                        <svg className='py-2' xmlns="http://www.w3.org/2000/svg" width="73" height="74" viewBox="0 0 73 74" fill="none">
                           <g opacity="0.89">
                             <circle cx="36.6171" cy="36.9946" r="36.145" fill="#E9F1FE" />
                             <path d="M36.6171 0.849731C43.7659 0.849731 50.7542 2.9696 56.6982 6.94125C62.6422 10.9129 67.275 16.558 70.0107 23.1626C72.7464 29.7672 73.4622 37.0348 72.0676 44.0462C70.6729 51.0577 67.2304 57.4981 62.1755 62.553L36.6171 36.9947V0.849731Z" fill="#36558F" />
