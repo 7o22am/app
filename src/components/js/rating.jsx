@@ -31,7 +31,7 @@ export default function rating() {
 
                         <div className='d-flex flex-column '>
                             <div className='d-flex  align-items-center '>
-                                <div className='px-5 item-name'>Name Teacher</div>
+                                <div className='px-1 item-name'>Name Teacher</div>
                                 <div className="  w-25 item-bg-rt">
                                     <div className="bar-3 px-2  "> </div>
                                 </div>
@@ -46,7 +46,7 @@ export default function rating() {
                                 <div className='item-rev'> &nbsp;&nbsp; 273 Reviews</div>
                             </div>
                             <div className='d-flex  align-items-center '>
-                                <div className='px-5 item-name'>Name Teacher</div>
+                                <div className='px-1 item-name'>Name Teacher</div>
                                 <div className="  w-25 item-bg-rt">
                                     <div className="bar-2 px-2  "> </div>
                                 </div>
@@ -62,7 +62,7 @@ export default function rating() {
                                 <div className='item-rev'> &nbsp;&nbsp; 273 Reviews</div>
                             </div>
                             <div className='d-flex  align-items-center '>
-                                <div className='px-5 item-name'>Name Teacher</div>
+                                <div className='px-1 item-name'>Name Teacher</div>
                                 <div className="  w-25 item-bg-rt">
                                     <div className="bar-5 px-2 "> </div>
                                 </div>
