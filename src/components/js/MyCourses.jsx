@@ -154,7 +154,7 @@ export default function MyCourses() {
 
                         <div className="container py-2">
                             <div className="row">
-                                <div className="col-md-8">
+                                <div className="col-md-8 col-sm-3">
                                     <div className="dv2-item1 d-flex justify-content-between py-3 ">
                                         <div>
                                             <p> ENROLLED COURSES</p>

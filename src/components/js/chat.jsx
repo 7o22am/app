@@ -260,7 +260,7 @@ export default function chat() {
 
 
                                 </div>
-                                <div className="col-md-6 offset-1">
+                                <div className="col-md-6  ">
                                     <div className=' d-flex py-3  justify-content-between chat-inf'>
                                         <div className='item-inf '>
                                             <img className='item-img ' src={Img3} alt="img" />
