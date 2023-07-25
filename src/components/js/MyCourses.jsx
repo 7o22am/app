@@ -220,7 +220,7 @@ export default function MyCourses() {
                                             </div>
                                         </div>
                                         <p className={styles.itemFeatNa} > Enim erat elit diam donec </p>
-                                        <p className='item-feat-des'> Quisque et tristique eu est sed id sapien, nullam erat. </p>
+                                        <p className={styles.itemFeatDes} >Quisque et tristique eu est sed id sapien, nullam erat. </p>
                                         <div className="d-flex  align-items-end  justify-content-between m-0 p-0">
                                             <div className="d-flex">
                                                 <BsFillPersonFill size={22} color="#000" />&nbsp;&nbsp;
@@ -243,16 +243,16 @@ export default function MyCourses() {
 
                                         </div>
                                     </div>
-                                    <div className=" item-cou p-2 ">
+                                    <div className={` ${styles.itemCou}  p-2 `}>
                                         <div classNameName='d-flex'>
                                             <div className='d-flex justify-content-between align-items-end p-3'>
                                                 <div style={{ backgroundColor: '#36558F', borderRadius: '50%', padding: '10px' }}>
                                                     <FaGraduationCap size={20} color="#fff" />
                                                 </div>
-                                                <div className='d-flex'> <p className='item-feat-p'> 5 lessons </p>&nbsp;&nbsp;
-                                                    <p className='item-feat-p'>   4 quizes</p></div></div>
+                                                <div className='d-flex'> <p className={styles.itemFeatP}> 5 lessons </p>&nbsp;&nbsp;
+                                                    <p className={styles.itemFeatP}>   4 quizes</p></div></div>
                                         </div>
-                                        <p className='item-feat-na'>Nibh consectetur leo</p>
+                                        <p className={styles.itemFeatNa}>Nibh consectetur leo</p>
                                         <p className={styles.itemFeatDes}> A, sed lectus id rutrum phasellus adipiscing sit dolor quis. </p>
                                         <div className="d-flex  align-items-end  justify-content-between  m-0 p-0">
                                             <div className="d-flex">
