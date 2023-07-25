@@ -1,0 +1,144 @@
+.itemTitle {
+    display: flex;
+    justify-content: space-between;
+    color: #35488B;
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 20px;
+  }
+  
+ 
+ 
+ /* Individual bars */
+ .bar5 {
+     width: 100%;
+     height: 18px;
+     background-color: #36558F;
+     border-radius: 4.946px;
+ }
+
+ .bar4 {
+     width: 80%;
+     height: 18px;
+     background-color: #36558F;
+     border-radius: 4.946px;
+ }
+
+ .bar3 {
+     width: 60%;
+     height: 18px;
+     background-color: #36558F;
+     border-radius: 4.946px;
+ }
+
+ .bar2 {
+     width: 40%;
+     height: 18px;
+     background-color: #36558F;
+     border-radius: 4.946px;
+ }
+
+ .bar1 {
+     width: 10%;
+     height: 18px;
+     background-color: #36558F;
+     border-radius: 4.946px;
+ }
+
+
+ .itemName {
+     color: var(--light-text-secondary, rgba(0, 0, 0, 0.60));
+     font-feature-settings: 'clig' off, 'liga' off;
+     font-family: Cairo;
+     font-size: 34.619px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 143%;
+     /* 49.505px */
+     letter-spacing: 0.42px;
+     text-transform: capitalize;
+ }
+
+ .itemRat {
+     color: var(--light-text-primary, rgba(0, 0, 0, 0.87));
+     font-feature-settings: 'clig' off, 'liga' off;
+
+     /* Typography/H5 */
+     font-family: Roboto;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 133.4%;
+     /* 32.016px */
+ }
+
+ .itemRev {
+     color: #D81159;
+     font-feature-settings: 'clig' off, 'liga' off;
+     font-family: Cairo;
+     font-size: 29.674px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 166%;
+     /* 49.258px */
+     letter-spacing: 0.989px;
+ }
+
+ .itemBgRt {
+     background-color: rgb(247, 244, 241);
+     border-radius: 5px;
+ }
+
+ @media (max-width: 575.98px) {  
+    .itemName {
+    color: var(--light-text-secondary, rgba(0, 0, 0, 0.60));
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Cairo;
+    font-size: 14.619px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    /* 49.505px */
+    letter-spacing: 0.42px;
+    text-transform: capitalize;
+}
+.itemRev {
+    color: #D81159;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Cairo;
+    font-size: 19.674px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166%;
+    /* 49.258px */
+    letter-spacing: 0.989px;
+}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {  .itemName {
+    color: var(--light-text-secondary, rgba(0, 0, 0, 0.60));
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Cairo;
+    font-size: 24.619px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    /* 49.505px */
+    letter-spacing: 0.42px;
+    text-transform: capitalize;
+    
+}
+.itemRev {
+    color: #D81159;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Cairo;
+    font-size: 20.674px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166%;
+    /* 49.258px */
+    letter-spacing: 0.989px;
+}
+}

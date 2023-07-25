@@ -2,7 +2,7 @@ import React from 'react'
 import Calendar from 'react-calendar';
 import { useState } from 'react';
 import 'react-calendar/dist/Calendar.css';
-import '../css/MyCourses.css'
+import  styles from '../css/MyCourses.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BiBookOpen } from 'react-icons/bi';
 import { FaGraduationCap } from 'react-icons/fa';
@@ -95,18 +95,18 @@ export default function MyCourses() {
             <div className="container-fluid py-5">
                 <div className="row">
                     <div className="col-md-2">
-                        <div className="item">
+                       
                             <h3>Lorem ipsum </h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veniam.</p>
-                        </div>
+                        
                     </div>
                     <div className="col-md-10">
-                        <div className="title"> My Courses</div>
+                        <div className={styles.title}> My Courses</div>
 
                         <div className="container py-2">
                             <div className="row">
                                 <div className="col-md-3">
-                                    <div className="item1">
+                                    <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="102" height="101" viewBox="0 0 102 101" fill="none">
                                             <path d="M59.5733 36.4934L43.2087 9.59522C42.1428 7.77693 40.2304 6.67969 38.13 6.67969H17.4705C12.9247 6.67969 10.0719 11.5703 12.2977 15.5203C16.4348 22.8396 22.2737 29.055 29.3207 33.6405C31.7033 35.4902 34.6502 36.4934 37.6911 36.4934H59.5733Z" fill="#36558E" />
                                             <path d="M84.3081 6.67969H63.6486C61.5482 6.67969 59.6358 7.77693 58.5699 9.59522L42.2053 36.4934H64.1189C67.1598 36.4934 70.0753 35.4902 72.4893 33.6405C79.543 29.0635 85.374 22.8562 89.5122 15.5203C91.7067 11.5703 88.8539 6.67969 84.3081 6.67969Z" fill="#E9F1FE" />
@@ -114,27 +114,27 @@ export default function MyCourses() {
                                             <path d="M50.8957 90.5716C43.4971 90.5716 36.5375 87.6248 31.3334 82.2639C26.0958 76.9026 23.179 69.6951 23.2138 62.2C23.2138 54.6134 26.098 47.497 31.3334 42.1362C33.8737 39.5109 36.9159 37.4234 40.2793 35.9977C43.6426 34.5721 47.2583 33.8374 50.9114 33.8374C54.5644 33.8374 58.1801 34.5721 61.5435 35.9977C64.9068 37.4234 67.9491 39.5109 70.4893 42.1362C81.2737 53.2027 81.2737 71.1975 70.4893 82.2639C65.2226 87.6248 58.2629 90.5716 50.8957 90.5716ZM50.8644 37.6845C44.7511 37.6845 38.6066 40.0671 33.9668 44.8636C29.4536 49.5023 26.943 55.7281 26.9758 62.2C26.9758 68.7522 29.4524 74.8967 33.9668 79.5365C36.1552 81.8088 38.7798 83.6159 41.6834 84.8495C44.5869 86.0831 47.7096 86.7178 50.8644 86.7156C57.2597 86.7156 63.2475 84.1763 67.7619 79.5365C77.0728 69.9748 77.0728 54.4253 67.7619 44.8636C65.5753 42.589 62.951 40.7804 60.0471 39.5466C57.1431 38.3128 54.0195 37.6794 50.8644 37.6845Z" fill="#D81159" />
                                             <path d="M46.0416 50.4833C46.0416 49.6479 46.3623 48.8467 46.9331 48.256C47.5038 47.6653 48.278 47.3335 49.0852 47.3335H51.8974C52.7046 47.3335 53.4787 47.6653 54.0495 48.256C54.6203 48.8467 54.9409 49.6479 54.9409 50.4833V72.4026C54.9409 73.238 54.6203 74.0391 54.0495 74.6298C53.4787 75.2205 52.7046 75.5524 51.8974 75.5524C51.0902 75.5524 50.3161 75.2205 49.7453 74.6298C49.1745 74.0391 48.8539 73.238 48.8539 72.4026V53.6236C48.089 53.5633 47.3743 53.2063 46.8529 52.624C46.3315 52.0417 46.0417 51.2772 46.0416 50.4833Z" fill="white" />
                                         </svg>
-                                        <p className="item1-bg m-0 p-0">Beginner</p>
+                                        <p className ={` ${styles.item1Bg} m-0 p-0 ` }>Beginner</p>
                                         <svg className='m-0 p-0' xmlns="http://www.w3.org/2000/svg" width="156" height="6" viewBox="0 0 156 6" fill="none">
                                             <line x1="2.97127" y1="3.39811" x2="153.45" y2="3.39811" stroke="#C7D4E0" stroke-width="4.85417" stroke-linecap="round" />
                                             <path d="M2.97119 3.39795H104.1" stroke="#C7D4E0" stroke-width="4.85417" stroke-linecap="round" />
                                             <path d="M2.97119 3.39795H104.1" stroke="#C7D4E0" stroke-width="4.85417" stroke-linecap="round" />
                                             <path d="M2.97119 3.39795H104.1" stroke="#2D9CDB" stroke-width="4.85417" stroke-linecap="round" />
                                         </svg>
-                                        <p className="item1-po">50 points to reach new level</p>
+                                        <p className={styles.item1Po}>50 points to reach new level</p>
 
                                     </div>
                                 </div>
-                                <div className="col-md-2 item2">
-                                    <div className="item2-m">
+                                <div className="col-md-2">
+                                    <div className={styles.item2M}>
                                         <img src={ImgMe} alt="My Image" /> &nbsp;&nbsp; 3
                                     </div>
                                     <p>completed courses</p>
-                                    <div className="item2-m">
+                                    <div className={styles.item2M}>
                                         <img src={ImgMe2} alt="My Image" />&nbsp;&nbsp; 2h 34m
                                     </div>
                                     <p>total time spend</p>
-                                    <div className="item2-m">
+                                    <div className={styles.item2M}>
                                         <img src={ImgMe3} alt="My Image" />&nbsp;&nbsp; 6
                                     </div>
                                     <p>passed quiz</p>
@@ -155,42 +155,42 @@ export default function MyCourses() {
                         <div className="container py-2">
                             <div className="row">
                                 <div className="col-md-8 col-sm-3">
-                                    <div className="dv2-item1 d-flex justify-content-between py-3 ">
+                                    <div className={`d-flex justify-content-between py-3 ${styles.dv2Item1}`}>
                                         <div>
                                             <p> ENROLLED COURSES</p>
                                         </div>
-                                        <button className='btn'>  <FaGraduationCap size={20} color="#000" /> course cataloge </button>
+                                        <button className={styles.btn}>  <FaGraduationCap size={20} color="#000" /> course cataloge </button>
                                     </div>
                                     <table className="table" >
                                         <thead>
                                             <tr>
-                                                <th className='table-cou' scope="col " colSpan="2">Course name</th>
-                                                <th className='table-u' scope="col">Mentor </th>
-                                                <th className='table-u' scope="col">Marks</th>
-                                                <th className='table-u' scope="col">Progress</th>
-                                                <th className='table-u' scope="col"> </th>
+                                                <th className={styles.tableCou} scope="col " colSpan="2">Course name</th>
+                                                <th className={styles.tableUser} scope="col">Mentor </th>
+                                                <th className={styles.tableUser} scope="col">Marks</th>
+                                                <th className={styles.tableUser} scope="col">Progress</th>
+                                                <th className={styles.tableUser}  scope="col"> </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             {Courses.map((Course, index) => (
                                                 <tr key={index}>
-                                                    <th className='tb-name' scope="row">
-                                                        <div className='bg-Coursename d-flex justify-content-center '>
+                                                    <th className={styles.tableName} scope="row">
+                                                        <div className={`${styles.bgCoursename} d-flex justify-content-center `}>
                                                             <BiBookOpen size={35} color="#82ACF5" />
                                                         </div>
 
                                                     </th>
                                                     <td> <div>
                                                         {Course.Coursename}
-                                                        <p className='hn-Coursename'>7 lessons</p>
+                                                        <p className={styles.hnCoursename}>7 lessons</p>
                                                     </div> </td>
-                                                    <td className='tb-mm py-3'><BsFillPersonFill size={15} color="#000" />
+                                                    <td className={`${styles.tableMm} py-3`}><BsFillPersonFill size={15} color="#000" />
                                                         {Course.Mentor}
                                                     </td>
-                                                    <td className='tb-mm py-3'><div className="d-flex justify-content-center">
+                                                    <td className={`${styles.tableMm} py-3`}><div className="d-flex justify-content-center">
                                                         {Course.Marks}</div>
                                                     </td>
-                                                    <td className='tb-p'>
+                                                    <td className={styles.tableP}>
                                                         <div className="d-flex justify-content-center align-self-center">{Course.Progress}
                                                         </div>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="102" height="6" viewBox="0 0 102 6" fill="none">
@@ -208,18 +208,18 @@ export default function MyCourses() {
                                 </div>
 
                                 <div className="col-md-4 py-3">
-                                    <p className='item4-title' >FEATURED</p>
-                                    <div className=" item-cou p-2 ">
+                                    <p className={styles.item4Title} >FEATURED</p>
+                                    <div className={` ${styles.itemCou}  p-2 `}>
                                         <div classNameName='d-flex'>
                                             <div className='d-flex justify-content-between align-items-end  p-3'>
                                                 <div style={{ backgroundColor: '#36558F', borderRadius: '50%', padding: '10px' }}>
                                                     <FaGraduationCap size={20} color="#fff" />
                                                 </div>
-                                                <div className='d-flex'> <p className='item-feat-p'> 5 lessons </p>&nbsp;&nbsp;
-                                                    <p className='item-feat-p'>   4 quizes</p></div>
+                                                <div className='d-flex'> <p className={styles.itemFeatP}> 5 lessons </p>&nbsp;&nbsp;
+                                                    <p className={styles.itemFeatP}>   4 quizes</p></div>
                                             </div>
                                         </div>
-                                        <p className='item-feat-na' > Enim erat elit diam donec </p>
+                                        <p className={styles.itemFeatNa} > Enim erat elit diam donec </p>
                                         <p className='item-feat-des'> Quisque et tristique eu est sed id sapien, nullam erat. </p>
                                         <div className="d-flex  align-items-end  justify-content-between m-0 p-0">
                                             <div className="d-flex">
@@ -253,7 +253,7 @@ export default function MyCourses() {
                                                     <p className='item-feat-p'>   4 quizes</p></div></div>
                                         </div>
                                         <p className='item-feat-na'>Nibh consectetur leo</p>
-                                        <p className='item-feat-des'> A, sed lectus id rutrum phasellus adipiscing sit dolor quis. </p>
+                                        <p className={styles.itemFeatDes}> A, sed lectus id rutrum phasellus adipiscing sit dolor quis. </p>
                                         <div className="d-flex  align-items-end  justify-content-between  m-0 p-0">
                                             <div className="d-flex">
                                                 <BsFillPersonFill size={22} color="#000" />&nbsp;&nbsp;

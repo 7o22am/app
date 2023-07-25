@@ -9,7 +9,7 @@
 
 
 
-.item1-bg {
+.item1Bg {
     color: var(--gray-1, #333);
     text-align: start;
     font-family: Cairo;
@@ -19,7 +19,7 @@
     line-height: normal;
 }
 
-.item1-po {
+.item1Po {
     color: var(--gray-2, #4F4F4F);
     font-family: Cairo;
     font-size: 11.326px;
@@ -28,7 +28,7 @@
     line-height: normal;
 }
 
-.item2-m {
+.item2M {
     color: var(--gray-1, #333);
     font-family: Cairo;
     font-size: 19.417px;
@@ -46,7 +46,7 @@
     line-height: normal;
 }
 
-.dv2-item1 p {
+.dv2Item1 p {
     color: #36558F;
     font-family: Cairo;
     font-size: 19.417px;
@@ -61,7 +61,7 @@
     box-shadow: 0.8090277314186096px 0.8090277314186096px 1.6180554628372192px 0px rgba(0, 0, 0, 0.25);
 }
 
-.table .tb-mm {
+.table .tableMm {
     color: var(--gray-2, #4F4F4F);
     font-family: Cairo;
     font-size: 9.708px;
@@ -70,7 +70,7 @@
     line-height: normal;
 }
 
-.table .tb-name {
+.table .tableName {
     color: var(--gray-2, #4F4F4F);
     font-family: Cairo;
     font-size: 12.944px;
@@ -79,7 +79,7 @@
     line-height: normal;
 }
 
-.table .tb-p {
+.table .tableP {
     color: #000;
     font-family: Cairo;
     font-size: 11.326px;
@@ -88,7 +88,7 @@
     line-height: normal;
 }
 
-.table .table-cou {
+.table .tableCou {
     color: #36558F;
     font-family: Cairo;
     font-size: 12.944px;
@@ -97,7 +97,7 @@
     line-height: normal;
 }
 
-.table .table-u {
+.table .tableUser {
     color: var(--gray-3, #828282);
     font-family: Cairo;
     font-size: 12.944px;
@@ -106,7 +106,7 @@
     line-height: normal;
 }
 
-.item4-title {
+.item4Title {
     color: #36558F;
     font-family: Cairo;
     font-size: 19.417px;
@@ -115,18 +115,18 @@
     line-height: normal;
 }
 
-.item-cou {
+.itemCou {
     border-radius: 6.472px;
     background: #FFF;
     box-shadow: 0px 1.6180554628372192px 1.6180554628372192px 0px rgba(0, 0, 0, 0.25);
 }
 
-.table .bg-Coursename {
+.table .bgCoursename {
     border-radius: 6.472px;
     background: rgba(130, 172, 245, 0.46);
 }
 
-.item-feat-p {
+.itemFeatP {
     color: #000;
     font-family: Cairo;
     font-size: 11.326px;
@@ -135,7 +135,7 @@
     line-height: normal;
 }
 
-.item-feat-na {
+.itemFeatNa {
     color: var(--gray-2, #4F4F4F);
     font-family: Cairo;
     font-size: 11.326px;
@@ -144,7 +144,7 @@
     line-height: normal;
 }
 
-.item-feat-des {
+.itemFeatDes {
     color: #000;
     font-family: Cairo;
     font-size: 15.944px;
@@ -152,7 +152,7 @@
     font-weight: 700;
     line-height: normal;
 }
-.hn-Coursename{
+.hnCoursename{
     color: var(--gray-3, #828282);
 font-family: Cairo;
 font-size: 11.326px;
